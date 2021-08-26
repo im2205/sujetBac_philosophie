@@ -1,0 +1,171 @@
+INSERT INTO `années` (`AnnéeSujet`) VALUES
+(2016),
+(2017),
+(2018),
+(2019);
+
+INSERT INTO `auteurs` (`NomAuteur`) VALUES
+('ALAIN'),
+('ANSELME'),
+('ARENDT'),
+('ARISTOTE'),
+('AUGUSTIN'),
+('AVERROES'),
+('BACHELARD'),
+('BACON'),
+('BERGSON'),
+('BERKELEY'),
+('CICERON'),
+('COMTE'),
+('CONDILLAC'),
+('COURNOT'),
+('DESCARTES'),
+('DIDEROT'),
+('DURKHEIM'),
+('EPICTETE'),
+('EPICURE'),
+('FOUCAULT'),
+('FREUD'),
+('HEGEL'),
+('HEIDEGGER'),
+('HOBBES'),
+('HUME'),
+('HUSSERL'),
+('KANT'),
+('KIERKEGAARD'),
+('LEIBNIZ'),
+('LOCKE'),
+('LUCRECE'),
+('MACHIAVEL'),
+('MALEBRANCHE'),
+('MARX'),
+('MERLEAU-PONTY'),
+('MILL'),
+('MONTAIGNE'),
+('MONTESQUIEU'),
+('NIETZSCHE'),
+('PASCAL'),
+('PLATON'),
+('PLOTIN'),
+('POPPER'),
+('ROUSSEAU'),
+('RUSSELL'),
+('SARTRE'),
+('SCHOPENHAUER'),
+('SENEQUE'),
+('SEXTUS EMPIRICUS'),
+('SPINOZA'),
+('THOMAS D\'AQUIN'),
+('TOCQUEVILLE'),
+('WITTGENSTEIN');
+
+
+INSERT INTO `filières` (`NomSpecialité`) VALUES
+('ES'),
+('L'),
+('S');
+
+
+INSERT INTO `regions` (`NomRegion`) VALUES
+('ESPAGNE'),
+('LA REUNION'),
+('METROPOLE'),
+('TUNISIE');
+
+
+INSERT INTO `sessions` (`NomSession`) VALUES
+('NORMALE'),
+('REMPLACEMENT'),
+('SECOURS');
+
+
+INSERT INTO `sujets` (`id`, `année_id`, `filière_id`, `region_id`, `session_id`, `type_id`, `nomSujet`, `auteur_id`) VALUES
+(1, 2017, 'ES', 'TUNISIE', 'NORMALE', 3, 'Quand on ne s’attache à rien, ni dans la vie publique, ni dans la vie privée, les attraits que peut offrir l’existence sont bien diminués ; en tout cas, ils perdent peu à peu de leur valeur quand approche le moment où tous les intérêts égoïstes doivent disparaître avec la mort ; au contraire, lorsqu’on laisse après soi des êtres qui sont l’objet d’un attachement personnel et surtout lorsqu’on a en même temps entretenu en soi une sympathie fraternelle pour les intérêts collectifs de l’humanité, la vie intéresse aussi vivement à la veille de la mort que dans la pleine vigueur de la jeunesse et de la santé. Quand la vie ne donne pas satisfaction, c’est, immédiatement après l’égoïsme, à l’absence de culture qu’il faut l’attribuer. Un esprit cultivé – et je n’entends pas par là celui du philosophe, mais tout esprit qui a pu puiser aux sources de la connaissance et qu’on a suffisamment habitué à exercer ses facultés – trouve des sources inépuisables d’intérêt dans tout ce qui l’entoure : dans les choses de la nature, les œuvres d’art, les créations de la poésie, les événements de l’histoire, les voies suivies par l’humanité dans le passé et dans le présent et les perspectives ainsi ouvertes sur l’avenir.\r\n\r\nMILL, L’Utilitarisme (1861) ', 'MILL'),
+(2, 2019, 'S', 'ESPAGNE', 'NORMALE', 3, 'Quant à l’idée que l’instruction inclinerait les hommes à une vie retirée et oisive, et les rendrait paresseux : ce serait là une bien étrange chose, si ce qui accoutume l’esprit à être perpétuellement en mouvement induisait à la paresse ! Tout au contraire, on peut assurément affirmer qu’aucune espèce d’homme n’aime le travail pour lui- même, sauf ceux qui sont instruits. Les autres l’aiment pour le profit, comme un mercenaire pour la solde (1), ou encore pour l’honneur, car il les élève aux yeux des gens et redore une réputation qui autrement ternirait, ou parce qu’il leur donne une idée de leur puissance, en leur fournissant la possibilité d’occasionner du plaisir ou de la peine, ou parce qu’il met à l’œuvre telle de leurs facultés dont ils s’enorgueillissent, ce qui alimente leur bonne humeur et l’opinion agréable qu’ils ont d’eux-mêmes, ou enfin parce qu’il fait avancer n’importe quel autre de leurs projets. De la valeur personnelle fausse, on dit que celle de certains se trouve dans les yeux des autres. De la même façon, les efforts des gens que je viens d’évoquer sont dans les yeux des autres, ou du moins relatifs à quelques desseins particuliers. Seuls les hommes instruits aiment le travail comme une action conforme à la nature, et qui convient à la santé de l’esprit autant que l’exercice physique convient à la santé du corps. Ils prennent plaisir dans l’action elle-même, non dans ce qu’elle procure. Par conséquent, ils sont les plus infatigables des hommes quand il s’agit d’un travail qui puisse retenir leur esprit. \r\nBACON, Du progrès et de la promotion des savoirs (1605) \r\n\r\n(1) Solde : la paye octroyée par l’armée à ses employés.', 'BACON'),
+(3, 2019, 'ES', 'TUNISIE', 'NORMALE', 3, 'Parmi les biens, certains sont des biens absolus, mais d’autres sont bons pour quelqu’un sans être absolument bons. Et ce sont les mêmes choses qui sont absolument bonnes et qui plaisent absolument. En effet, ce sont des choses profitables à un corps en bonne santé dont nous disons qu’elles sont absolument bonnes pour le corps, et non pas de celles qui sont profitables à un corps malade, comme les remèdes et les amputations. De même plaît absolument au corps ce qui plaît à un corps sain et entier, par exemple voir en pleine lumière et non dans l’ombre (bien sûr, c’est le contraire pour qui souffre des yeux) ; le vin le plus plaisant n’est pas celui qui plaît à l’homme qui a abîmé sa langue dans l’ivrognerie (puisque parfois on leur verse du vinaigre !) ; c’est celui qui plaît au palais intact. \r\nAinsi en va-t-il pour l’âme : ce qui plaît absolument n’est pas ce qui plaît aux enfants et aux bêtes, mais ce qui plaît aux adultes. En tout cas, quand on a mémoire des deux, ce sont les plaisirs de l’adulte que nous choisissons. L’enfant et la bête sont par rapport à l’homme dans le même rapport que le méchant et l’insensé par rapport à l’homme mesuré et à l’homme sage. Or les plaisirs de ces derniers correspondent à leurs manières d’être, ce sont les plaisirs bons et beaux. \r\nARISTOTE, Éthique à Eudème (IVe siècle avant J.-C).', 'ARISTOTE'),
+(4, 2016, 'S', 'LA REUNION', 'NORMALE', 3, 'L\'intelligence et la force d\'un homme seul sont si insuffisantes, que ce soit pour éviter les maux ou pour se procurer les bienfaits de l\'existence, et, de plus, les volontés des divers individus sont tellement portées à se contredire et à se contrarier mutuellement, qu\'il est absolument nécessaire que plusieurs puissances indépendantes s\'unissent ensemble sous la direction (si je puis m\'exprimer ainsi) d\'une seule et même volonté, je veux dire la loi de la société. Sans elle, point de civilité, point d\'ordre, point de paix parmi les hommes ; sans elle, le monde n\'est qu\'un immense amas de misère et de désordre ; le fort comme le faible, le sage comme l\'insensé, sont exposés de tous côtés à toutes les calamités auxquelles l\'homme peut être sujet dans un état où la seule sécurité réside dans le fait de ne rien posséder qui fasse naître l\'envie ou le désir chez autrui : état encore plus inacceptable que celui des bêtes, puisqu\'une créature raisonnable possède une aptitude supérieure à la leur de réflexion et de prévision des souffrances.\r\n\r\nBERKELEY, De l\'Obéissance passive (1712)\r\n\r\n1. Dégager l\'idée principale du texte et les étapes de son argumentation. 2. Expliquer :\r\n\r\na) \"les volontés des divers individus sont tellement portées à se contredire et à se contrarier mutuellement\" ;\r\n\r\nb) \"une seule et même volonté, je veux dire la loi de la société\" ; c) \"(un) état encore plus inacceptable que celui des bêtes\".\r\n\r\n3. Les hommes ont-ils besoin d\'être soumis aux lois ? \r\n', 'BERKELEY'),
+(5, 2016, 'L', 'METROPOLE', 'REMPLACEMENT', 3, 'Pourquoi l’homme est-il perfectible et pourquoi l’animal ne l\'est-il pas ? L’animal ne l\'est pas, parce que sa raison, s’il en a une, est dominée par un sens despote (1) qui la subjugue (2). Toute l’âme du chien est au bout de son nez, et il va toujours flairant. Toute l’âme de l’aigle est dans son œil, et l’aigle va toujours regardant. Toute l’âme de la taupe est dans son oreille, et elle va toujours écoutant.\r\n\r\nMais il n’en est pas ainsi de l’homme. Il est (3) entre ses sens une telle harmonie qu’aucun ne prédomine assez sur les autres pour donner la loi à son entendement ; c\'est son entendement au contraire, ou l’organe de sa raison qui est le plus fort. C\'est un juge qui n\'est ni corrompu ni subjugué par aucun des témoins ; il conserve toute son autorité, et il en use pour se perfectionner : il combine toutes sortes d’idées et de sensations, parce qu’il ne sent rien fortement.\r\n\r\n1 \"despote\" : tyran\r\n2 \"subjuguer\" : dominer totalement \r\n3 «il est»:il existe\r\n\r\nDIDEROT, Réfutation d’Helvétius (1786)\r\n\r\n\r\n1. Dégager l’idée principale de ce texte et les étapes de son argumentation.\r\n\r\n2. Expliquer les expressions suivantes :\r\na) L’homme est \"perfectible\" ;\r\nb) \"Toute l’âme de l’aigle est dans son œil, et l’aigle va toujours regardant\" ; c) \"C\'est un juge qui n\'est ni corrompu ni subjugué par aucun des témoins\".\r\n\r\n3. La raison est-elle indépendante des sens ?\r\n', 'DIDEROT'),
+(6, 2016, 'ES', 'TUNISIE', 'NORMALE', 3, 'Me voilà tuberculeux, par exemple. Ici apparaît la malédiction (et la grandeur). Cette maladie, qui m’infecte, m’affaiblit, me change, limite brusquement mes possibilités et mes horizons. J’étais acteur ou sportif ; avec mes deux pneumos1, je ne puis plus l’être. Ainsi négativement, je suis déchargé de toute responsabilité touchant ces possibilités que le cours du monde vient de m’ôter. C’est ce que le langage populaire nomme être diminué. Et ce mot semble recouvrir une image correcte : j’étais un bouquet de possibilités, on ôte quelques fleurs, le bouquet reste dans le vase, diminué, réduit à quelques éléments. Mais en réalité il n’en est rien : cette image est mécanique. La situation nouvelle, quoique venue du dehors, doit être vécue, c’est-à-dire assumée, dans un dépassement. Il est vrai de dire qu’on m’ôte ces possibilités, mais il est aussi vrai de dire que j’y renonce ou que je m’y cramponne ou que je ne veux pas voir qu’elles me sont ôtées ou que je me soumets à un régime systématique pour les reconquérir. En un mot, ces possibilités sont, non pas supprimées, mais remplacées par un choix d’attitudes possibles envers la disparition de ces possibilités.\r\n\r\nSARTRE, Cahiers pour une morale (1947-1948) 1 « pneumo » : intervention médicale pratiquée pour traiter la tuberculose, maladie grave des poumons.\r\n\r\n\r\n1. Déterminer la thèse du texte et la structure de son argumentation.\r\n\r\n2. Expliquer :\r\n\r\na) « ces possibilités que le cours du monde vient de m’ôter » ;\r\n\r\nb) « la situation nouvelle quoique venue du dehors doit être vécue » ;\r\n\r\nc) « ces possibilités sont, non pas supprimées, mais remplacées par un choix d’attitudes possibles envers la disparition de ces possibilités ».\r\n\r\n3. Peut-on rester libre en toutes circonstances ?\r\n', 'SARTRE'),
+(7, 2017, 'L', 'ESPAGNE', 'NORMALE', 3, 'La raison nous assure que puisqu’il n’est pas en notre pouvoir de borner nos désirs, et que nous sommes portés par une inclination naturelle à aimer tous les biens, nous ne pouvons devenir heureux qu’en possédant celui qui les renferme tous. Notre propre expérience nous fait sentir que nous ne sommes pas heureux dans la possession des biens dont nous jouissons, puisque nous en souhaitons encore d’autres. Enfin nous voyons tous les jours que les grands biens dont les princes et les rois même les plus puissants jouissent sur la terre, ne sont pas encore capables de contenter leurs désirs : qu’ils ont même plus d’inquiétudes et de déplaisirs que les autres ; et qu’étant, pour ainsi dire, au haut de la roue de la fortune, ils doivent être infiniment plus agités et plus secoués par son mouvement que ceux qui sont au-dessous et plus proche du centre. Car enfin ils ne tombent jamais que du haut ; ils ne reçoivent jamais que de grandes blessures ; et toute cette grandeur qui les accompagne et qu’ils attachent à leur être propre ne fait que les 1 grossir et les étendre, afin qu’ils soient capables d’un plus grand nombre de blessures et plus exposés aux coups de la fortune.\r\n\r\nMALEBRANCHE, De la recherche de la vérité (1675)\r\n\r\n(1) de telle sorte qu’en fin de compte', 'MALEBRANCHE'),
+(8, 2017, 'L', 'METROPOLE', 'NORMALE', 3, 'Les sens, quoique nécessaires pour toutes nos connaissances actuelles, ne sont point suffisants pour nous les donner toutes, puisque les sens ne donnent jamais que des exemples, c\'est-à-dire des vérités particulières ou individuelles. Or tous les exemples qui confirment une vérité générale, de quelque nombre qu\'ils soient, ne suffisent pas pour établir la nécessité universelle de cette même vérité, car il ne suit pas que ce qui est arrivé arrivera toujours de même. Par exemple, les Grecs et Romains et tous les autres peuples de la terre ont toujours remarqué qu\'avant le décours (1) de 24 heures, le jour se change en nuit, et la nuit en jour. Mais on se serait trompé, si l\'on avait cru que la même règle s\'observe partout, puisque on a vu le contraire dans le séjour de Nova Zembla (2). Et celui-là se tromperait encore qui croirait que c’est dans nos climats au moins une vérité nécessaire et éternelle, puisqu\'on doit juger que la terre et le soleil même n\'existent pas nécessairement, et qu\'il y aura peut-être un temps où ce bel astre ne sera plus, au moins dans sa présente forme, ni tout son système. D\'où il paraît que les vérités nécessaires, telles qu\'on les trouve dans les mathématiques pures et particulièrement dans l\'arithmétique et dans la géométrie, doivent avoir des principes dont la preuve ne dépende point des exemples, ni par conséquence du témoignage des sens.\r\n\r\nLEIBNIZ, Nouveaux essais sur l’entendement humain, 1704. \r\n\r\n1. Le décours: l\'écoulement.\r\n2. Nova Zembla : archipel de l\'océan glacial arctique. ', 'LEIBNIZ'),
+(9, 2017, 'ES', 'ESPAGNE', 'REMPLACEMENT', 3, 'Juger des discours des hommes par les effets qu’ils produisent, c’est souvent mal les apprécier. Outre que ces effets ne sont pas toujours sensibles et faciles à connaître, ils varient à l’infini comme les circonstances dans lesquelles ces discours sont tenus. Mais c’est uniquement l’intention de celui qui les tient qui les apprécie et détermine leur degré de malice ou de bonté. Dire faux n’est mentir que par l’intention de tromper, et l’intention même de tromper, loin d’être toujours jointe avec celle de nuire, a quelquefois un but tout contraire. Mais pour rendre un mensonge innocent il ne suffit pas que l’intention de nuire ne soit pas expresse1, il faut de plus la certitude que l’erreur dans laquelle on jette ceux à qui l’on parle ne peut nuire à eux ni à personne en quelque façon que ce soit. Il est rare et difficile qu’on puisse avoir cette certitude ; aussi est-il difficile et rare qu’un mensonge soit parfaitement innocent.\r\n\r\nROUSSEAU, Les Rêveries du promeneur solitaire (1782) ', 'ROUSSEAU'),
+(10, 2018, 'L', 'MÉTROPOLE', 'SECOURS', 3, 'Souvent nous ne savons pas ce que nous souhaitons ou ce que nous craignons. Nous pouvons caresser un souhait pendant des années entières, sans nous l’avouer, sans même en prendre clairement conscience ; c’est que l’intellect n’en doit rien savoir, c’est qu’une révélation nous semble dangereuse pour notre amour-propre, pour la bonne opinion que nous tenons à avoir de nous-mêmes ; mais quand ce souhait vient à se réaliser, notre propre joie nous apprend, non sans nous causer une certaine confusion, que nous appelions cet événement de tous nos vœux ; tel est le cas de la mort d’un proche parent dont nous héritons.\r\nEt quant à ce que nous craignons, nous ne le savons souvent pas, parce que nous n’avons pas le courage d’en prendre clairement conscience. Souvent même nous nous trompons entièrement sur le motif véritable de notre action ou de notre abstention, jusqu’à ce qu’un hasard nous dévoile le mystère. Nous apprenons alors que nous nous étions mépris sur le motif véritable, que nous n’osions pas nous l’avouer, parce qu’il ne répondait nullement à la bonne opinion que nous avons de nous-mêmes. Ainsi, nous nous abstenons d’une certaine action, pour des raisons purement morales à notre avis ; mais après coup nous apprenons que la peur seule nous retenait, puisque, une fois tout danger disparu, nous commettons cette action.\r\n\r\nSCHOPENHAUER, Le monde comme volonté et comme représentation, 1818. ', 'SCHOPENHAUER'),
+(11, 2018, 'ES', 'LA REUNION', 'NORMALE', 3, 'Les gouvernants voudraient faire admettre la maxime qu’eux seuls sont susceptibles de voir juste en politique, et que par conséquent il n’appartient qu’à eux d’avoir une opinion à ce sujet. Ils ont bien leurs raisons pour parler ainsi, et les gouvernés ont aussi les leurs, qui sont précisément les mêmes, pour refuser d’admettre ce principe, qui, effectivement considéré en lui-même, et sans aucun préjugé, soit de gouvernant, soit de gouverné, est tout à fait absurde. Car les gouvernants sont, au contraire, par leur position, même en les supposant honnêtes, les plus incapables d’avoir une opinion juste et élevée sur la politique générale ; puisque plus on est enfoncé dans la pratique, moins on doit voir juste sur la théorie. Une condition capitale pour un publiciste (1) qui veut se faire des idées politiques larges, est de s’abstenir rigoureusement de tout emploi ou fonction publique : comment pourrait-il être à la fois acteur et spectateur ? Mais on est tombé, à cet égard, d’un excès dans un autre. En combattant la prétention ridicule du savoir politique exclusif des gouvernants, on a engendré, dans les gouvernés, le préjugé, non moins ridicule, quoique moins dangereux, que tout homme est apte à se former, par le seul instinct, une opinion juste sur le système politique, et chacun a prétendu devoir s’ériger en législateur.\r\n\r\nIl est singulier que les hommes jugent impertinent de prétendre savoir la physique ou l’astronomie, etc., sans avoir étudié ces sciences, et qu’ils croient en même temps que tout le monde doit savoir la science politique, et avoir une opinion fixe et tranchante sur ses principes les plus abstraits, sans qu’il soit nécessaire d’avoir la peine d’y réfléchir, et d’en avoir fait un objet spécial d’étude. Cela tient à ce que la politique n’est point encore une science positive : car il est évident que, quand elle le sera devenue, tout le monde comprendra que, pour la connaître, il est indispensable d’avoir étudié les observations et les déductions sur lesquelles elle sera fondée.\r\n\r\nAuguste COMTE, Opuscules de philosophie sociale\r\n\r\n1 Publiciste : personne qui écrit sur la vie politique', 'COMTE'),
+(12, 2016, 'ES', 'LA REUNION', 'NORMALE', 3, 'Ce n’est pas l’espoir d’une récompense qui nous pousse vers nos amis, nous pensons que l’amitié doit être recherchée pour elle-même et que tout son prix vient de ce qu’on aime et est aimé. Les vrais amis sont bien éloignés des gens qui ramènent bestialement tout au plaisir et cela n’a rien de surprenant : comment pourraient-ils élever leurs regards vers quoi que ce soit de haut, de magnifique et de divin, alors que toutes leurs pensées s’abaissent vers un objet si vil et si méprisable. Ne nous occupons donc pas d’eux dans cet entretien, sachons qu’un sentiment affectueux, qu’un tendre bon vouloir prennent naturellement naissance lorsqu’on se trouve en présence d’un être donnant de sa valeur morale des signes manifestes. Ceux qui aspirent à la même valeur s’attachent à cet être, se rapprochent de lui pour jouir des avantages que la fréquentation et le caractère de celui qu’ils ont commencé d’aimer peuvent leur procurer ; on veut que l’amitié soit aussi forte et de même qualité des deux côtés et l’on rend service à son ami plus volontiers qu’on ne lui demande quoi que ce soit, ce qui crée une noble émulation. Il est donc vrai qu’on peut attendre de l’amitié le plus grand profit, vrai aussi qu’elle a une origine plus honorable et plus profonde que la faiblesse. Si des considérations d’utilité cimentaient l’amitié, un changement de situation la déferait, mais, comme la nature demeure pareille à elle-même, les amitiés vraies se perpétuent.\r\n\r\nCICÉRON, De l’amitié, 1er siècle avant J.-C.\r\n', 'CICÉRON'),
+(13, 2018, 'S', 'ESPAGNE', 'NORMALE', 3, 'Considérons maintenant l’âme dans le corps, qu’elle existe d’ailleurs avant lui ou seulement en lui ; d’elle et du corps se forme le tout appelé animal. Si le corps est pour elle comme un instrument dont elle se sert, elle n’est pas contrainte d’accueillir en elle les affections du corps, pas plus que l’artisan ne ressent ce qu’éprouvent ses outils: mais peut-être faut-il qu’elle en ait la sensation, puisqu’il faut qu’elle connaisse, par la sensation, les affections extérieures du corps, pour se servir de lui comme d’un instrument : se servir des yeux, c’est voir. Or, elle peut être atteinte dans sa vision, et par conséquent, subir des peines, des souffrances, et tout ce qui arrive au corps ; elle éprouve aussi des désirs, quand elle cherche à soigner un organe malade.\r\n\r\nMais comment ces passions viendront-elles du corps jusqu’à elle ? Un corps communique ses propriétés à un autre corps ; mais à l’âme ? Ce serait dire qu’un être pâtit (1) de la passion d’un autre. Tant que l’âme est un principe qui se sert du corps, et le corps un instrument de l’âme, ils restent séparés l’un de l’autre ; et si l’on admet que l’âme est un principe qui se sert du corps, on la sépare. Mais avant qu’on ait atteint cette séparation par la pratique de la philosophie, qu’en était-il ? Ils sont mêlés : mais comment ? Ou bien c’est d’une des espèces de mélanges ; ou bien il y a entrelacement réciproque ; ou bien l’âme est comme la forme du corps, et n’est point séparée de lui ; ou bien elle est une forme qui touche le corps, comme le pilote touche son gouvernail ; ou bien une partie de l’âme est séparée du corps et se sert de lui, et une autre partie y est mélangée et passe elle-même au rang d’organe.\r\n\r\nPLOTIN, Ennéades. \r\n\r\n1 Pâtit : souffre', 'PLOTIN'),
+(14, 2016, 'ES', 'TUNISIE', 'SECOURS', 2, 'Pour apprécier une oeuvre d\\\'art, suffit-il qu\\\'elle nous plaise?', 'DURKHEIM'),
+(15, 2017, 'S', 'MÉTROPOLE', 'NORMALE', 2, 'Peut-on se libérer de sa culture?', 'FOUCAULT'),
+(16, 2019, 'L', 'LA REUNION', 'NORMALE', 2, 'L’État est-il au service de la société ?', 'AVERROES'),
+(17, 2018, 'S', 'METROPOLE', 'NORMALE', 2, 'Une loi injuste vaut-elle mieux que l’absence de loi ?', 'PLOTIN'),
+(18, 2017, 'ES', 'TUNISIE', 'NORMALE', 1, 'Toute vérité est-elle bonne à dire?', 'ALAIN'),
+(19, 2017, 'L', 'METROPOLE', 'NORMALE', 1, 'Autrui m\'est-il toujours étranger?', 'HEGEL');
+
+INSERT INTO `thèmes` (`id`) VALUES
+('ART'),
+('AUTRUI'),
+('BONHEUR'),
+('CONSCIENCE'),
+('CROYANCE'),
+('CULTURE'),
+('DESIR'),
+('DEVOIR'),
+('DROIT'),
+('ECHANGES'),
+('ETAT'),
+('EXPERIENCE'),
+('HISTOIRE'),
+('INCONSCIENT'),
+('JUSTICE'),
+('LANGAGE'),
+('LIBERTE'),
+('LOI'),
+('MORALE'),
+('NATURE'),
+('POLITIQUE'),
+('RAISON'),
+('RELIGION'),
+('SCIENCE'),
+('SOCIETE'),
+('SUJET'),
+('TECHNIQUE'),
+('TEMPS'),
+('TRAVAIL'),
+('VERITE'),
+('VIVANT'),
+('PERCEPTION');
+
+
+
+INSERT INTO `types` (`id`, `Nom`) VALUES
+(1, 'DISSERTATION 1'),
+(2, 'DISSERTATION 2'),
+(3, 'EXPLICATION DE TEXTE');
+
+INSERT INTO `sujet_thème` (`sujet_id`, `thème_id`) VALUES
+(4, 'LOI'),
+(5, 'RAISON'),
+(6, 'LIBERTE'),
+(12, 'MORALE'),
+(14, 'ART'),
+(8, 'PERCEPTION'),
+(9, 'MORALE'),
+(15, 'CULTURE'),
+(15, 'LIBERTE'),
+(18, 'VERITE'),
+(19, 'AUTRUI'),
+(10, 'LIBERTE'),
+(11, 'ETAT'),
+(11, 'POLITIQUE'),
+(13, 'DESIR'),
+(17, 'LOI'),
+(2, 'RAISON'),
+(2, 'TRAVAIL'),
+(3, 'BONHEUR'),
+(3, 'MORALE'),
+(16, 'ETAT'),
+(16, 'POLITIQUE'),
+(16, 'SOCIETE'),
+(1, 'CULTURE'),
+(7, 'DESIR'),
+(7, 'RAISON');
+
